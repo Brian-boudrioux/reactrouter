@@ -1,10 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Router from "./Router";
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <h1>My first router</h1>;
-    </>
+    <BrowserRouter>
+      <Header />
+      <Router />
+      <Footer />
+    </BrowserRouter>
   );
 }
 
